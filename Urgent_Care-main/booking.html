@@ -1,0 +1,233 @@
+
+<html>
+	
+	<body>
+		<div class = "formbold-wrapper">
+			<button class="formbold-back" id = "back">Go Back</button>
+		  </div>
+	
+	<div class="formbold-main-wrapper" background = "../img/5101.jpg_wh860.jpg">
+		
+		
+		<div class="formbold-form-wrapper">
+			
+			
+			<div class="formbold-mb-5"  >
+				
+				<p style="background-image: url('../img/5101.jpg_wh860.jpg');">
+	
+				<h1 class = "title_appointment" id = "title">Book an Appointment</h1>
+			  <label for="name" class="formbold-form-label" id = "patient_name"  > Patient Name </label>
+			  <input
+				type="text"
+				name="name"
+				id="patient"
+				placeholder="Patient Name"
+				class="formbold-form-input"
+				readonly
+			  >
+	
+				</input >
+			</div>
+			<div class="formbold-mb-5">
+			  <label for="Doctor" class="formbold-form-label"> Doctor Name </label>
+			  
+			  <input
+				type="text"
+				name="Doctor"
+				id="doc"
+				placeholder="Doctor Name"
+				class="formbold-form-input"
+				readonly
+			  >
+			</input>
+			  
+			</div>
+			
+			<div class="flex flex-wrap formbold--mx-3">
+				<div class="formbold-mb-5 w-full">
+				  <label for="date" class="formbold-form-label"> Date </label>
+				  <input
+					type="date"
+					name="date"
+					id="date"
+					class="formbold-form-input"
+					required
+				  />
+				</div>
+
+				
+			  
+			</div>
+
+			<div class="formbold-mb-5">
+				<label for="Doctor" class="formbold-form-label"> Slots </label>
+				
+				<select
+				  type="text"
+				  name="Slots"
+				  id="slots"
+				  placeholder="Doctor Name"
+				  class="formbold-form-input"
+				  disabled
+				>
+				<option>Select a Slot--</option>
+				<option id ="1" value ="1">9AM - 10AM</option>				
+				<option id ="2" value ="2">10AM - 11AM</option>
+				<option id ="3" value ="3">11AM - 12PM</option>
+				<option id ="4" value ="4">12PM - 1PM</option>
+				<option id ="5" value ="5">1PM - 2PM</option>
+				<option id ="6" value ="6">2PM - 3PM</option>
+
+				<option id ="7" value ="7">3PM - 4PM</option>
+				<option id ="8" value ="8">4PM - 5PM</option>
+				<option id ="9" value ="9">5PM - 6PM</option>
+
+
+
+
+				</select>
+				
+			  </div>
+	  
+			
+			<div>
+			  <button class="formbold-btn" id = "book">Book</button>
+			</div>
+		  
+		</div>
+	  </div>
+	  <script type="module" src="BookAppointment.js"></script>
+	</body>
+	</html>
+	
+	
+	  <style>
+		* {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		  background-color:white;
+		}
+		body {
+		  font-family: "Inter", Arial, Helvetica, sans-serif;
+		}
+		
+		.formbold-mb-5 {
+		  margin-bottom: 20px;
+		}
+		.formbold-pt-3 {
+		  padding-top: 12px;
+		}
+		.formbold-main-wrapper {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  padding: 120px;
+		  background-image: url("./assets/img/book.jpg");
+		  
+		}
+	  
+		.formbold-form-wrapper {
+	
+		  margin: 0 auto;
+		  max-width: 450px;
+		  width: 100%;
+		  background: white;
+		  margin-right: -50px;
+		}
+		.formbold-form-label {
+			margin-left:10%;
+	
+		  display: block;
+		  font-weight: 500;
+		  font-size: 16px;
+		  color: #07074d;
+		  margin-bottom: 12px;
+		}
+		.formbold-form-label-2 {
+		  font-weight: 600;
+		  font-size: 20px;
+		  margin-bottom: 20px;
+		}
+	  
+		.formbold-form-input {
+		  width: 80%;
+		  margin:5px;
+		  margin-left:10%;
+		  padding: 12px 24px;
+		  border-radius: 6px;
+		  border: 1px solid #e0e0e0;
+		  background: white;
+		  font-weight: 500;
+		  font-size: 16px;
+		  color: #6b7280;
+		  outline: none;
+		  resize: none;
+		}
+		.formbold-form-input:focus {
+		  border-color: #6a64f1;
+		  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+		}
+	  
+		.formbold-btn {
+		  text-align: center;
+		  font-size: 16px;
+		  border-radius: 6px;
+		  padding: 14px 32px;
+		  border: none;
+		  font-weight: 600;
+		  background-color:black;
+		  color: white;
+		  width: 40%;
+		  cursor: pointer;
+		  margin-left:30%;
+		  margin-bottom: 5px
+		}
+
+		.formbold-back {
+		  font-size: 16px;
+		  border-radius: 6px;
+		  padding: 14px 32px;
+		  border: none;
+		  font-weight: 600;
+		  background-color:lightblue;
+		  color: white;
+		  width: 10%;
+		  cursor: pointer;
+		  margin-left:0;
+		  margin-bottom: 5px
+		}
+		.formbold-btn:hover {
+		  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+		}
+	  
+		.formbold--mx-3 {
+		  
+		}
+		.formbold-px-3 {
+		  padding-left: 12px;
+		  padding-right: 12px;
+		}
+		.flex {
+		  display: flex;
+		}
+		.flex-wrap {
+		  flex-wrap: wrap;
+		}
+		.w-full {
+		  width: 100%;
+		}
+		#title{
+			margin-top:50px ;
+			margin-bottom: 40px;
+			color: blue;
+			text-align: center;
+			text-shadow: #6b7280;
+			}
+	
+		
+	
+		  
+		
+	  </style>
